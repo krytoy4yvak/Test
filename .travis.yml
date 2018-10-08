@@ -3,7 +3,8 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
-script: manage.py test
+script:
+  - python src/manage.py test 
 deploy:
   provider: heroku
   api_key: e641c6c9-cf73-4166-bf8d-9cd1351de104
